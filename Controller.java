@@ -16,9 +16,9 @@ public class Controller {
         SweepControler.getSweepControlerInstance();
         SweepControler.printRecentlyMineMap();
 
-        while(SweepControler.getMineLeft()!= 0) {
+        do {
             SweepControler.chooseOnePoint();
-        }
+        } while(SweepControler.getMineLeft()!= 0 && SweepControler.getPrintMineLeft() != 0);
 
         System.out.println("YOU WIN!");
     }

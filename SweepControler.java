@@ -202,4 +202,8 @@ class SweepControler {
     public static int getMineLeft() {
         return mineLeft;
     }
+
+    public static int getPrintMineLeft() {
+        return printMineLeft;
+    }
 }
