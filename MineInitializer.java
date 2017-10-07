@@ -42,11 +42,11 @@ class MineInitializer {
     private static int getNumberOfMines() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("How many mine in this map（input should more than or equals " + scale + "and less than or equals" + scale * 2 + "）:");
+        System.out.println("How many mine in this map（input should more than or equals " + scale + "and less than or equals " + scale * 3 + "）:");
         int totalMine = scanner.nextInt();
         scanner.nextLine();
 
-        if (totalMine <= scale * 2 || totalMine >= scale) {
+        if (totalMine <= scale * 3 && totalMine >= scale) {
             System.out.println("There are " + totalMine +"  mines in the map.");
         } else {
             System.out.println("input number is too large or too small，please input again!");

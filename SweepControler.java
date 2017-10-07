@@ -69,8 +69,13 @@ class SweepControler {
         int[] input = new int[3];
         Scanner scanner = new Scanner(System.in);
 
-        for (int i = 0;i < 3; i++) {
-            input[i] = scanner.nextInt();
+        try {
+            for (int i = 0; i < 3; i++) {
+                input[i] = scanner.nextInt();
+            }
+        } catch (Exception e) {
+            System.out.println("请输入正确的坐标格式");
+            input = choosePointType();
         }
 
         scanner.nextLine();
